@@ -1,0 +1,12 @@
+0000000000000000000000000000000000000000 abf86b92bcccb43f594faba3a5e4d9fb27f68688 Marackul <81311327+Marackul@users.noreply.github.com> 1791276047 +0200	clone: from https://github.com/MarcieIsForager/IM3-Semesterprojekt.git
+abf86b92bcccb43f594faba3a5e4d9fb27f68688 bdf81111470ef26e3b23385b974112fd9969cf35 Marackul <marko.stevic@stud.fhgr.ch> 1791276881 +0200	pull --ff --recurse-submodules --progress origin: Fast-forward
+bdf81111470ef26e3b23385b974112fd9969cf35 4e32020dc8a8e91c46b9597cbf3c50753052284a Marackul <marko.stevic@stud.fhgr.ch> 1791277462 +0200	pull --ff --recurse-submodules --progress origin: Fast-forward
+4e32020dc8a8e91c46b9597cbf3c50753052284a ad3941412defb6a48b64fb87abd0cd6108659a72 Marackul <marko.stevic@stud.fhgr.ch> 1791279307 +0200	pull --ff --recurse-submodules --progress origin: Fast-forward
+ad3941412defb6a48b64fb87abd0cd6108659a72 f1e37fa44169379f78cd8c67ee9466a9e145950a Marackul <marko.stevic@stud.fhgr.ch> 1791450157 +0200	commit: added filters to unload
+f1e37fa44169379f78cd8c67ee9466a9e145950a e9279146ba001ebb219f1ed58456db75de574f8b MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791887019 +0200	commit: Last Changes
+e9279146ba001ebb219f1ed58456db75de574f8b 65737cd1994299df7455ac19be56a9042645e7ac MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791887152 +0200	commit: Remove umlauts from csvs
+65737cd1994299df7455ac19be56a9042645e7ac 7557901b1349fd6382533971be9950a26db5a6a6 MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791888037 +0200	commit: added zuerich csv
+7557901b1349fd6382533971be9950a26db5a6a6 910830adf56f6fe98a9fa6f27c7535a19c991abf MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791888160 +0200	commit: Removed further umlauts
+910830adf56f6fe98a9fa6f27c7535a19c991abf 72825c994fffca965f2d612af6b50459892dc9f7 MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791893455 +0200	commit: Bugfixing load pipeline
+72825c994fffca965f2d612af6b50459892dc9f7 b60b4b5257ff9b414c5419131aad4d4dc722b76f MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791894042 +0200	commit: added printr for debugging
+b60b4b5257ff9b414c5419131aad4d4dc722b76f a328667b9c9a312c6e602d282cbd123129feca13 MarcieIsForager <277662141+MarcieIsForager@users.noreply.github.com> 1791904836 +0200	commit: Added bugfixes and refactor

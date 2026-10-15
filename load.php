@@ -32,22 +32,34 @@ $insert_death_data = $pdo->prepare(
 //    'is_caused_by_stress'=>1
 //]);
 
-foreach ($result as $cantonKey => $rows) {
-    echo "Lade Kanton-Gruppe: $cantonKey \n";
-    
-    foreach ($rows as $row) {
-        // Prozent-Wert bereinigen (z.B. "3,7%" oder "1%" zu float konvertieren, falls nötig)
-        $prozentStr = str_replace(['%', ','], ['', '.'], $row['Total Prozent']);
-
+for ($row = 0; $row < sizeof($cleaned_up_death_data); $row++) {
+    for ($col = 0; $col < sizeof($cleaned_up_death_data[$row+1]); $col++) {
         $insert_death_data->execute([
-            'death_cause'              => $row['Todesursache'],
-            'total_death_toll'         => $row['Total Tode'],
-            'percentage_of_death_toll' => (float)$prozentStr,
-            'canton_id'                => $row['canton_id'],
-            'is_caused_by_stress'      => $row['is_caused_by_stress']
+            'death_cause'              => $result[$row+1][$col]['Todesursache'],
+            'total_death_toll'         => $result[$row+1][$col]['Total Tode'],
+            'percentage_of_death_toll' => $result[$row+1][$col]['Total Prozent'],
+            'canton_id'                => $result[$row+1][$col]['canton_id'],
+            'is_caused_by_stress'      => $result[$row+1][$col]['is_caused_by_stress']
         ]);
     }
 }
+
+//foreach ($result as $cantonKey => $rows) {
+//    echo "Lade Kanton-Gruppe: $cantonKey \n";
+//    
+//    foreach ($rows as $row) {
+//        // Prozent-Wert bereinigen (z.B. "3,7%" oder "1%" zu float konvertieren, falls nötig)
+//        $prozentStr = str_replace(['%', ','], ['', '.'], $row['Total Prozent']);
+//
+//        $insert_death_data->execute([
+//            'death_cause'              => $row['Todesursache'],
+//            'total_death_toll'         => $row['Total Tode'],
+//            'percentage_of_death_toll' => (float)$prozentStr,
+//            'canton_id'                => $row['canton_id'],
+//            'is_caused_by_stress'      => $row['is_caused_by_stress']
+//        ]);
+//    }
+//}
 
 
 
